@@ -9,9 +9,15 @@ author_profile: true
 
 You can also find my articles on <u><a href='https://www.semanticscholar.org/author/Jiaao-Chen/47739850'>my Semantic Scholar Profile</a></u> or <u><a href="https://scholar.google.com/citations?user=Pi9IVvUAAAAJ&hl=en">my Google Scholar profile</a>.</u>
 
+## 2021
+* _Weakly-Supervised Hierarchical Models for Predicting Persuasive Strategies in Good-faith Textual Requests_     
+**Jiaao Chen**, and Diyi Yang       
+AAAI, 2021
+
+
 ## 2020
 * _Multi-View Sequence-to-Sequence Models with Conversational Structure for Abstractive Dialogue Summarization_        
-**Jiaao Chen**, Diyi Yang      
+**Jiaao Chen**, and Diyi Yang      
 EMNLP, 2020 [pdf](https://arxiv.org/abs/2010.01672), [code](https://github.com/GT-SALT/Multi-View-Seq2Seq)
 
 * _Local Additivity Based Data Augmentation for Semi-supervised NER_        
