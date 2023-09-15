@@ -13,7 +13,7 @@ redirect_from:
 Hello, I'm Jiaao Chen!
 
 
-I am a second-year Ph.D. student in the [School of Interactive Computing](https://www.ic.gatech.edu/) at [Georgia Tech](https://www.gatech.edu/). My advisor is Prof. [Diyi Yang](https://www.cc.gatech.edu/~dyang888/index.html). I am interested in Natural Language Processing and Machine Learning. 
+I am a fifth-year Ph.D. student in the [School of Interactive Computing](https://www.ic.gatech.edu/) at [Georgia Tech](https://www.gatech.edu/). My advisor is Prof. [Diyi Yang](https://www.cc.gatech.edu/~dyang888/index.html). I am interested in Natural Language Processing and Machine Learning. I am also a visiting student researcher at [Stanford University](https://nlp.stanford.edu/).
 
 
 
