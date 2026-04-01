@@ -12,9 +12,14 @@ redirect_from:
 
 Hello, I'm Jiaao Chen!
 
+I am a Founding Member of Technical Staff at [Eigen AI](https://www.eigen.ai/), where I lead the development of self-evolving multi-agent platforms for agentic AI systems. My work focuses on LLM post-training (SFT, GRPO/RL), tool-use agents, and multi-agent data pipelines.
 
-I am a fifth-year Ph.D. student in the [School of Interactive Computing](https://www.ic.gatech.edu/) at [Georgia Tech](https://www.gatech.edu/). My advisor is Prof. [Diyi Yang](https://www.cc.gatech.edu/~dyang888/index.html). I am interested in Natural Language Processing and Machine Learning. I am also a visiting student researcher at [Stanford University](https://nlp.stanford.edu/).
+Previously, I was a Research Scientist at [Meta](https://about.meta.com/) (GenAI team), where I led efforts on agentic post-training for Llama models, and an Applied Scientist at [Amazon](https://www.amazon.com/), working on LLM reasoning for e-commerce.
 
+I received my Ph.D. in Computer Science from [Georgia Institute of Technology](https://www.gatech.edu/) / [Stanford University](https://www.stanford.edu/) in 2024, advised by Prof. [Diyi Yang](https://cs.stanford.edu/~diyiyang/). My research spans data-efficient NLP, LLM reasoning, dialogue summarization, and diffusion language models, with 20+ first-author publications at top venues including NeurIPS, ICLR, EMNLP, and ACL.
 
+Before Georgia Tech, I obtained my bachelor's degree from [Zhejiang University](http://www.zju.edu.cn/english/), where I was in the ACEE Honor Class at Chu Kochen Honors College (top 40 out of 6,000 students).
 
-Before coming to Georgia Tech, I obtained my bachelor's degree from [Zhejiang University](http://www.zju.edu.cn/english/). I was previously a student intern at [Carnegie Mellon University](https://www.cmu.edu/) advised by Prof. [Robert Kraut](https://hcii.cmu.edu/people/robert-kraut), and [UC Davis](https://www.ucdavis.edu/) working with Prof.[Zhou Yu](http://zhouyu.cs.ucdavis.edu/).
+**Google Scholar Citations: 5,000+ | h-index: 24 | i10-index: 30**
+
+**Research Interests:** Agentic AI Systems, LLM Post-Training & Reasoning, Multi-Agent Platforms, Data-Efficient NLP, Dialogue Summarization, Diffusion Language Models

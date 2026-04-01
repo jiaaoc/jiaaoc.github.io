@@ -2,17 +2,15 @@
 main:
   - title: "About"
     url: /about/
-    
+
   - title: "Publications"
     url: /publication.html
 
   - title: "Experience"
     url: /experience.html
-    
+
   - title: "CV"
-    url: /CV_2023_Aug.pdf
+    url: /Jiaao_Chen_CV.pdf
 
   - title: "Contact"
     url: /contact.html
-
-

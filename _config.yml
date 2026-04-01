@@ -10,8 +10,8 @@ locale                   : "en-US"
 title                    : "Jiaao Chen"
 title_separator          : "-"
 name                     : &name "Jiaao Chen"
-description              : &description "PhD student at Georgia Institute of Technology"
-url                      : "https://cs.stanford.edu/people/jiaaoc/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+description              : &description "AI/ML Research Scientist"
+url                      : "https://www.jiaaochen.com" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "jiaaoc.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
@@ -82,12 +82,12 @@ analytics:
 author:
   name             : "Jiaao Chen"
   avatar           : "j2.png"
-  bio              : "Ph.D. in Computer Science at Georgia Institute of Technology"
-  location         : "Atlanta, Georgia, USA"
-  employer         : "Georgia Institute of Technology"
+  bio              : "Founding Member of Technical Staff at Eigen AI. Ph.D. from Georgia Tech."
+  location         : "Palo Alto, California, USA"
+  employer         : "Eigen AI"
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=Pi9IVvUAAAAJ&hl=en"
-  email            : "jiaaochen@gatech.edu"
+  email            : "chenjiaao1998@gmail.com"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
