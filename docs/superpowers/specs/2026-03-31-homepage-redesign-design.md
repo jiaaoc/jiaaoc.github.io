@@ -24,15 +24,20 @@ Redesign Jiaao Chen's academic homepage (Jekyll/AcademicPages theme) with a mode
 
 | File | Change |
 |------|--------|
+| `assets/css/main.scss` | **Add `@import "custom";` at the end** — required for `_custom.scss` to load (currently not imported) |
 | `_sass/_custom.scss` | All new styles — palette, cards, stats bar, pills, timeline, nav, sidebar, publication entries, experience timeline |
-| `_pages/about.md` | Restructure into: bio → stats bar → research interests (pills) → news (timeline) → selected publications → experience chips |
-| `_pages/publication.md` | Add year-header accents, card-style entries, venue badges, styled pdf/code links, citation stats bar at top |
-| `_pages/experience.md` | Timeline-style layout with vertical line + colored dots, card per role, card grouping for education/teaching/service/awards |
-| `_pages/contact.md` | Card-based layout with styled links |
+| `_pages/about.md` | Restructure into: bio → stats bar → research interests (pills) → news (timeline) → selected publications → experience chips. Uses inline HTML with CSS class wrappers. |
+| `_pages/publication.md` | Restructure with inline HTML: wrap each venue in `<span class="venue-neurips">` etc. for colored badges, wrap entries in `<div class="pub-entry">`, add citation stats bar HTML at top |
+| `_pages/experience.md` | Restructure with inline HTML: wrap each role in `<div class="timeline-item">`, add timeline structure with dots/line, wrap sections in `<div class="card-section">` |
+| `_pages/contact.md` | Card-based layout with styled links (inline HTML) |
 | `_includes/author-profile.html` | Modernize sidebar: terracotta photo border ring, styled social links, prominent CV download button |
-| `_includes/masthead.html` | Warm-palette nav bar with terracotta active/hover states |
-| `_config.yml` | No structural changes expected; minor tweaks only if needed |
+| `_includes/masthead.html` | Warm-palette nav bar with terracotta active/hover states, inline SVG logo |
+| `_includes/seo.html` | Add enhanced Person structured data with `jobTitle`, `worksFor`, `alumniOf` from new `_config.yml` keys |
+| `_includes/head/custom.html` | Add SVG favicon link (keep existing PNG favicons), update `theme-color` to `#e07a5f` |
+| `_config.yml` | SEO fields: `description`, `og_image`, `twitter.username`, `social.links`, `social.type`; new keys for structured data: `author.job_title`, `author.works_for`, `author.alumni_of` |
 | `_data/navigation.yml` | No changes |
+| `images/logo.svg` | New SVG logo file |
+| `README.md` | Replace with project-specific README |
 
 ## Homepage (about.md) — Section by Section
 
@@ -163,15 +168,107 @@ Redesign Jiaao Chen's academic homepage (Jekyll/AcademicPages theme) with a mode
 - `.view-all-link`: terracotta, small, aligned right
 
 ## Responsive Behavior
+
 - On mobile: sidebar collapses above content (existing theme behavior, preserved)
-- Stats bar: stack vertically on very small screens
-- Experience chips: wrap naturally
-- Cards: full width, reduced padding on mobile
+- Stats bar: `flex-wrap: wrap` — tiles stack on screens below `$small` breakpoint (~600px)
+- Experience chips: `flex-wrap: wrap` — wrap naturally
+- Cards: full width, padding reduced to `12px` on screens below `$small`
+- Timeline layout: on mobile, hide vertical line, stack cards normally
+- Uses existing theme breakpoint variables: `$small`, `$medium`, `$large`, `$x-large` from `_variables.scss`
+
+## Site Logo
+
+Create an inline SVG logo for the navigation bar and favicon. Design:
+- Monogram "JC" in a rounded square
+- Background: terracotta `#e07a5f`
+- Letters: white, clean sans-serif weight 600
+- Size: 36x36px in nav, scalable
+- Rounded corners: 8px
+- Used in `_includes/masthead.html` next to site title
+- Also generate a favicon.svg version for `_includes/head/custom.html`
+
+Files to modify/create:
+| File | Change |
+|------|--------|
+| `_includes/masthead.html` | Add inline SVG logo before site title |
+| `_includes/head/custom.html` | Add SVG favicon link |
+| `images/logo.svg` | Standalone SVG file for reuse |
+
+## SEO Improvements
+
+### _config.yml changes
+- Add `description` with keyword-rich text: "Jiaao Chen — AI researcher specializing in LLM agents, post-training, and reasoning. Founding Member at Eigen AI. Ph.D. Georgia Tech/Stanford."
+- Set `og_image` to `profile.jpg` (for social sharing previews)
+- Set `twitter.username` to `jiaao_chen` (top-level `twitter:` block, line 60 — this is what `seo.html` reads for Twitter Card meta tags, distinct from `author.twitter`)
+- Add `social.links` array with Google Scholar, GitHub, LinkedIn, Twitter URLs
+- Set `social.type` to `Person`
+- Add new author keys for structured data: `author.job_title: "Founding Member of Technical Staff"`, `author.works_for: "Eigen AI"`, `author.alumni_of: "Georgia Institute of Technology"`
+
+### Page-level SEO
+- Add `description` and `excerpt` frontmatter to each page:
+  - `about.md`: "Jiaao Chen's academic homepage. AI researcher working on LLM agents, post-training, and reasoning at Eigen AI."
+  - `publication.md`: "Publications by Jiaao Chen. 5,000+ citations, h-index 24. Research in LLM agents, reasoning, and NLP."
+  - `experience.md`: "Professional experience of Jiaao Chen. Eigen AI, Meta, Amazon, Georgia Tech/Stanford."
+  - `contact.md`: "Contact Jiaao Chen — email, Google Scholar, GitHub, LinkedIn, Twitter."
+
+### Structured Data (seo.html)
+
+Enhance the existing Person schema (lines 115-125) with richer fields:
+- `jobTitle`: read from `site.author.job_title`
+- `worksFor`: `{ "@type": "Organization", "name": site.author.works_for }`
+- `alumniOf`: `{ "@type": "CollegeOrUniversity", "name": site.author.alumni_of }`
+- `sameAs`: read from existing `site.social.links` array
+- `image`: `site.author.avatar | prepend: "/images/" | prepend: base_path`
+- Keep existing schema logic, add Liquid conditionals for new fields (e.g., `{% if site.author.job_title %}"jobTitle": {{ site.author.job_title | jsonify }},{% endif %}`)
+
+### head/custom.html
+
+- Add SVG favicon `<link>` alongside existing PNG favicons (keep all existing favicon links)
+- Update `theme-color` meta tag from `#ffffff` to `#e07a5f` (terracotta)
+
+## README Update
+
+Replace the generic AcademicPages README with a project-specific one:
+
+```
+# Jiaao Chen — Academic Homepage
+
+Personal academic website for Jiaao Chen, built with Jekyll on the AcademicPages theme.
+
+## About
+
+Jiaao Chen is a Founding Member of Technical Staff at Eigen AI, specializing in LLM agents, post-training, and reasoning. Ph.D. from Georgia Tech/Stanford (2024).
+
+- Live site: https://www.jiaaochen.com
+- Google Scholar: https://scholar.google.com/citations?user=Pi9IVvUAAAAJ
+
+## Local Development
+
+1. Install dependencies: `bundle install`
+2. Serve locally: `bundle exec jekyll liveserve`
+3. Open http://localhost:4000
+
+## Structure
+
+- `_pages/` — Main pages (about, publications, experience, contact)
+- `_sass/_custom.scss` — Custom styles (terracotta/sage/sand palette)
+- `_includes/` — Template partials (sidebar, nav, SEO)
+- `_config.yml` — Site configuration
+- `images/` — Profile photo, logo, favicons
+
+## Design
+
+Warm terracotta + sage + sand color palette with card-based layout. See `docs/superpowers/specs/` for the full design spec.
+```
 
 ## Implementation Notes
-- All styles go in `_custom.scss` to avoid modifying theme core files
-- About page content uses HTML directly in `about.md` (Jekyll supports inline HTML in markdown)
-- Publications page stays as markdown lists but styled via CSS targeting `.page__content` selectors
-- Experience page same approach — markdown content, CSS card styling via class wrappers
-- No JavaScript required — pure CSS redesign
+
+- **Critical:** `assets/css/main.scss` must add `@import "custom";` at the end for any styles to load
+- All styles go in `_sass/_custom.scss` to avoid modifying theme core SCSS files
+- `about.md`, `publication.md`, `experience.md`, and `contact.md` all use inline HTML with CSS class wrappers (Jekyll renders HTML in markdown files)
+- Publication venue badges require explicit `<span class="venue-XYZ">` wrappers in `publication.md` — pure CSS cannot distinguish venue text content
+- Experience timeline requires `<div class="timeline-item">` wrappers in `experience.md` — plain markdown lists cannot create the timeline layout
+- No JavaScript required — pure CSS + HTML restructuring
 - No new dependencies or gems
+- SVG logo is inline in masthead (no external image dependency)
+- Stats bar values (citations, h-index, first-author count) are hardcoded in `about.md` and `publication.md` — must be manually updated when they change
