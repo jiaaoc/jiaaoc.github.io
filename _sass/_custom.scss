@@ -1,0 +1,537 @@
+/* ==========================================================================
+   CUSTOM STYLES — Terracotta/Sage/Sand Palette
+   ========================================================================== */
+
+/* --- Palette Variables --- */
+$terracotta:       #e07a5f;
+$terracotta-tint:  #fef0ec;
+$sage:             #81b29a;
+$sage-tint:        #ecf4ef;
+$sand:             #c89442;
+$sand-tint:        #fef9ee;
+$navy:             #1a1a2e;
+$body-text:        #555;
+$warm-bg:          #faf6f1;
+$card-border:      #e8ddd0;
+$warm-divider:     #f0ebe4;
+$purple-tint:      #f3eef8;
+$purple-text:      #8b6aaf;
+$blue-tint:        #eef4f8;
+$blue-text:        #5a8aab;
+
+/* --- Global Overrides --- */
+body {
+  background: $warm-bg;
+  color: $body-text;
+  line-height: 1.7;
+}
+
+a {
+  color: $terracotta;
+  &:hover {
+    color: darken($terracotta, 10%);
+  }
+}
+
+/* --- Navigation Bar --- */
+.masthead {
+  background: $warm-bg;
+  border-bottom: 1px solid $card-border;
+
+  .masthead__inner-wrap {
+    .masthead__menu {
+      .greedy-nav {
+        background: $warm-bg;
+
+        a {
+          color: $body-text;
+          text-decoration: none;
+          &:hover {
+            color: $terracotta;
+          }
+        }
+
+        .masthead__menu-item--lg a {
+          color: $navy;
+          font-weight: 700;
+        }
+
+        .visible-links {
+          a {
+            &:before {
+              background: $terracotta;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.site-logo {
+  display: inline-block;
+  margin-right: 8px;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+}
+
+/* --- Sidebar / Author Profile --- */
+.sidebar {
+  .author__avatar {
+    img {
+      border-radius: 50%;
+      border: 3px solid $terracotta;
+      padding: 0;
+    }
+  }
+
+  .author__content {
+    .author__name {
+      color: $navy;
+      font-weight: 700;
+    }
+    .author__bio {
+      color: $terracotta;
+      font-size: 0.85em;
+    }
+  }
+
+  .author__urls-wrapper {
+    .author__urls {
+      li {
+        a {
+          color: $body-text;
+          text-decoration: none;
+          padding: 4px 8px;
+          border-radius: 6px;
+          transition: background 0.2s, color 0.2s;
+
+          &:hover {
+            background: $terracotta-tint;
+            color: $terracotta;
+          }
+        }
+      }
+    }
+  }
+}
+
+.cv-download-btn {
+  display: block;
+  width: 100%;
+  padding: 8px 16px;
+  margin-top: 12px;
+  background: $terracotta;
+  color: #fff !important;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.85em;
+  text-decoration: none !important;
+  transition: background 0.2s;
+
+  &:hover {
+    background: darken($terracotta, 8%);
+    color: #fff !important;
+  }
+}
+
+/* --- Page Content Overrides --- */
+.page__content {
+  h2 {
+    color: $navy;
+    border-bottom-color: $card-border;
+  }
+
+  a {
+    color: $terracotta;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+/* --- Card System --- */
+.card-section {
+  background: #fff;
+  border: 1.5px solid $card-border;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 16px;
+
+  h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: $navy;
+    margin: 0 0 12px 0;
+    padding-bottom: 0;
+    border-bottom: none;
+    border-left: none;
+    padding-left: 0;
+  }
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+
+  h2 {
+    margin: 0 !important;
+  }
+}
+
+.view-all-link {
+  color: $terracotta;
+  font-size: 0.85em;
+  text-decoration: none;
+  white-space: nowrap;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+/* --- Stats Bar --- */
+.stats-bar {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.stat-tile {
+  flex: 1;
+  text-align: center;
+  padding: 14px 8px;
+  border-radius: 10px;
+
+  .stat-number {
+    font-size: 1.6rem;
+    font-weight: 800;
+    line-height: 1.2;
+  }
+
+  .stat-label {
+    font-size: 0.75rem;
+    color: $body-text;
+    margin-top: 2px;
+  }
+
+  &.terracotta {
+    background: $terracotta-tint;
+    .stat-number { color: $terracotta; }
+  }
+
+  &.sage {
+    background: $sage-tint;
+    .stat-number { color: $sage; }
+  }
+
+  &.sand {
+    background: $sand-tint;
+    .stat-number { color: $sand; }
+  }
+}
+
+/* --- Pill Tags --- */
+.pill-tag {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.82em;
+  font-weight: 500;
+  margin: 3px 2px;
+
+  &.terracotta { background: $terracotta-tint; color: $terracotta; }
+  &.sage       { background: $sage-tint; color: $sage; }
+  &.sand       { background: $sand-tint; color: $sand; }
+  &.purple     { background: $purple-tint; color: $purple-text; }
+  &.blue       { background: $blue-tint; color: $blue-text; }
+  &.gray       { background: #f1f1f1; color: #777; }
+}
+
+/* --- News Timeline --- */
+.news-item {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 6px;
+  line-height: 1.6;
+
+  .news-date {
+    font-weight: 600;
+    font-size: 0.85em;
+    white-space: nowrap;
+
+    &.terracotta { color: $terracotta; }
+    &.sage       { color: $sage; }
+    &.sand       { color: $sand; }
+    &.purple     { color: $purple-text; }
+  }
+
+  .news-text {
+    color: $body-text;
+    font-size: 0.9em;
+  }
+}
+
+/* --- Publication Entries --- */
+.pub-entry {
+  padding-bottom: 14px;
+  margin-bottom: 14px;
+  border-bottom: 1px solid $warm-divider;
+
+  &:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .pub-title {
+    font-weight: 600;
+    color: $navy;
+    font-size: 0.95em;
+  }
+
+  .pub-authors {
+    color: #888;
+    font-size: 0.85em;
+    margin: 2px 0;
+  }
+
+  .pub-venue {
+    font-size: 0.82em;
+    font-weight: 500;
+    margin-right: 6px;
+  }
+
+  .pub-links a {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-size: 0.78em;
+    margin-right: 4px;
+    text-decoration: none;
+    font-weight: 500;
+
+    &.link-pdf {
+      background: $sage-tint;
+      color: $sage;
+      &:hover { background: darken($sage-tint, 5%); }
+    }
+
+    &.link-code {
+      background: $terracotta-tint;
+      color: $terracotta;
+      &:hover { background: darken($terracotta-tint, 5%); }
+    }
+  }
+}
+
+/* Venue badges */
+.venue-neurips  { color: $terracotta; }
+.venue-iclr     { color: $sage; }
+.venue-emnlp    { color: $sand; }
+.venue-acl      { color: $purple-text; }
+.venue-arxiv    { color: #777; }
+.venue-other    { color: $body-text; }
+
+/* Publication page year headers */
+.page__content h2 {
+  border-bottom: none;
+  border-left: 4px solid $terracotta;
+  padding-left: 12px;
+  padding-bottom: 0;
+  margin-top: 1.5em;
+}
+
+/* Scholar link buttons on publications page */
+.scholar-links {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+
+  a {
+    display: inline-block;
+    padding: 6px 16px;
+    border-radius: 8px;
+    font-size: 0.85em;
+    font-weight: 500;
+    text-decoration: none;
+
+    &.btn-scholar {
+      background: $terracotta;
+      color: #fff;
+      &:hover { background: darken($terracotta, 8%); }
+    }
+
+    &.btn-semantic {
+      background: $sage;
+      color: #fff;
+      &:hover { background: darken($sage, 8%); }
+    }
+  }
+}
+
+/* --- Experience Timeline --- */
+.experience-timeline {
+  position: relative;
+  padding-left: 28px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    bottom: 8px;
+    width: 2px;
+    background: $card-border;
+  }
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 20px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: -24px;
+    top: 8px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+  }
+
+  &.dot-terracotta::before { background: $terracotta; }
+  &.dot-sage::before       { background: $sage; }
+  &.dot-sand::before       { background: $sand; }
+
+  .timeline-card {
+    background: #fff;
+    border: 1.5px solid $card-border;
+    border-radius: 10px;
+    padding: 16px;
+  }
+
+  .timeline-company {
+    font-weight: 700;
+    color: $navy;
+    a { color: $navy; text-decoration: none; &:hover { color: $terracotta; } }
+  }
+
+  .timeline-role {
+    color: $terracotta;
+    font-weight: 500;
+    font-size: 0.9em;
+  }
+
+  .timeline-meta {
+    color: #999;
+    font-size: 0.82em;
+    margin-bottom: 8px;
+  }
+
+  ul {
+    margin: 4px 0 0 0;
+    padding-left: 18px;
+    li {
+      font-size: 0.88em;
+      line-height: 1.6;
+    }
+  }
+}
+
+/* --- Experience Chips (homepage) --- */
+.experience-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  .exp-chip {
+    padding: 6px 14px;
+    background: $warm-bg;
+    border: 1px solid $card-border;
+    border-radius: 8px;
+    font-size: 0.85em;
+    color: $navy;
+
+    strong {
+      font-weight: 700;
+    }
+  }
+}
+
+/* --- Contact Card --- */
+.contact-card {
+  background: #fff;
+  border: 1.5px solid $card-border;
+  border-radius: 10px;
+  padding: 24px;
+  max-width: 500px;
+
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid $warm-divider;
+    font-size: 0.92em;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    i {
+      color: $terracotta;
+      width: 20px;
+      text-align: center;
+    }
+
+    a {
+      color: $body-text;
+      text-decoration: none;
+      &:hover { color: $terracotta; }
+    }
+  }
+}
+
+/* --- Sidebar Card Container --- */
+.sidebar {
+  .author__avatar + .author__content,
+  > div[itemscope] {
+    background: $warm-bg;
+    border: 1.5px solid $card-border;
+    border-radius: 12px;
+    padding: 16px;
+  }
+}
+
+/* --- Responsive --- */
+@include breakpoint(max-width $small) {
+  .stats-bar {
+    flex-direction: column;
+  }
+
+  .card-section {
+    padding: 12px;
+  }
+
+  .experience-timeline {
+    padding-left: 0;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .timeline-item {
+    &::before {
+      display: none;
+    }
+  }
+}

@@ -3,72 +3,182 @@ permalink: /experience.html
 redirect_from: 
   - /experience/
 title: "Experience"
+description: "Professional experience of Jiaao Chen. Eigen AI, Meta, Amazon, Georgia Tech/Stanford."
+excerpt: "Professional experience of Jiaao Chen. Eigen AI, Meta, Amazon, Georgia Tech/Stanford."
 author_profile: true
 ---
 
 ## Professional Experience
 
-* **Founding Member of Technical Staff**, [Eigen AI](https://www.eigen.ai/), Palo Alto, USA, Jan. 2026 -- Present
-  - Leading EigenData, a self-evolving multi-agent platform for function-calling data synthesis and quality assurance
-  - Building EigenLoop, a full post-training pipeline (SFT, GRPO/RL, evaluation) for production agentic AI systems
+<div class="experience-timeline">
 
-* **Research Scientist**, [Meta](https://about.meta.com/) (GenAI), Menlo Park, USA, Mar. 2025 -- Jan. 2026
-  - Built agentic synthetic data generation pipeline with verified tasks and LLM-as-judge for agentic RL in TBD agent workstream
-  - Led agentic post-training that improved Llama 4 Maverick's BFCL function-calling performance from ~50 to 72
+<div class="timeline-item dot-terracotta">
+<div class="timeline-card">
+<div class="timeline-company"><a href="https://www.eigen.ai/">Eigen AI</a></div>
+<div class="timeline-role">Founding Member of Technical Staff</div>
+<div class="timeline-meta">Palo Alto, USA · Jan. 2026 – Present</div>
+<ul>
+<li>Leading EigenData, a self-evolving multi-agent platform for function-calling data synthesis and quality assurance</li>
+<li>Building EigenLoop, a full post-training pipeline (SFT, GRPO/RL, evaluation) for production agentic AI systems</li>
+</ul>
+</div>
+</div>
 
-* **Applied Scientist**, [Amazon](https://www.amazon.com/), Palo Alto, USA, May 2024 -- Mar. 2025
-  - Improved LLM reasoning for modeling customer shopping behaviors and personalized recommendation
+<div class="timeline-item dot-sage">
+<div class="timeline-card">
+<div class="timeline-company"><a href="https://about.meta.com/">Meta</a> (GenAI)</div>
+<div class="timeline-role">Research Scientist</div>
+<div class="timeline-meta">Menlo Park, USA · Mar. 2025 – Jan. 2026</div>
+<ul>
+<li>Built agentic synthetic data generation pipeline with verified tasks and LLM-as-judge for agentic RL in TBD agent workstream</li>
+<li>Led agentic post-training that improved Llama 4 Maverick's BFCL function-calling performance from ~50 to 72</li>
+</ul>
+</div>
+</div>
 
-* **Research Intern**, [Tencent AI (US)](https://ai.tencent.com/), Seattle, USA, May 2023 -- Aug. 2023
-  - Developed Skills-in-Context Prompting for compositional reasoning in LLMs (EMNLP 2024)
+<div class="timeline-item dot-sand">
+<div class="timeline-card">
+<div class="timeline-company"><a href="https://www.amazon.com/">Amazon</a></div>
+<div class="timeline-role">Applied Scientist</div>
+<div class="timeline-meta">Palo Alto, USA · May 2024 – Mar. 2025</div>
+<ul>
+<li>Improved LLM reasoning for modeling customer shopping behaviors and personalized recommendation</li>
+</ul>
+</div>
+</div>
 
-* **Applied Scientist Intern**, [Amazon (AWS)](https://aws.amazon.com/), Santa Clara, USA, June 2022 -- Jan. 2023
-  - Parameter-efficient fine-tuning design spaces (ICLR 2023); Diffusion language model (EMNLP 2023)
+<div class="timeline-item dot-terracotta">
+<div class="timeline-card">
+<div class="timeline-company"><a href="https://ai.tencent.com/">Tencent AI (US)</a></div>
+<div class="timeline-role">Research Intern</div>
+<div class="timeline-meta">Seattle, USA · May 2023 – Aug. 2023</div>
+<ul>
+<li>Developed Skills-in-Context Prompting for compositional reasoning in LLMs (EMNLP 2024)</li>
+</ul>
+</div>
+</div>
 
-* **Research Intern**, [Allen Institute for AI (AI2)](https://allenai.org/), Mosaic Team, Seattle, USA, June 2021 -- Sep. 2021
-  - Compositional data augmentation for commonsense QA with Yejin Choi's group
+<div class="timeline-item dot-sage">
+<div class="timeline-card">
+<div class="timeline-company"><a href="https://aws.amazon.com/">Amazon (AWS)</a></div>
+<div class="timeline-role">Applied Scientist Intern</div>
+<div class="timeline-meta">Santa Clara, USA · June 2022 – Jan. 2023</div>
+<ul>
+<li>Parameter-efficient fine-tuning design spaces (ICLR 2023); Diffusion language model (EMNLP 2023)</li>
+</ul>
+</div>
+</div>
 
-* **Researcher**, [Microsoft Research](https://www.microsoft.com/en-us/research/), Dynamics 365 AI, Seattle, USA, Dec. 2020 -- May 2021
-  - Created HiddenCut (ACL 2021) and Mixture of Virtual Prompts for efficient fine-tuning
+<div class="timeline-item dot-sand">
+<div class="timeline-card">
+<div class="timeline-company"><a href="https://allenai.org/">Allen Institute for AI (AI2)</a></div>
+<div class="timeline-role">Research Intern, Mosaic Team</div>
+<div class="timeline-meta">Seattle, USA · June 2021 – Sep. 2021</div>
+<ul>
+<li>Compositional data augmentation for commonsense QA with Yejin Choi's group</li>
+</ul>
+</div>
+</div>
 
-* **Research Assistant**, Georgia Institute of Technology / Stanford University, Aug. 2019 -- May 2024
-  - Advisor: Prof. Diyi Yang. Published 20+ first-author papers at NeurIPS, ICLR, EMNLP, ACL, NAACL
+<div class="timeline-item dot-terracotta">
+<div class="timeline-card">
+<div class="timeline-company"><a href="https://www.microsoft.com/en-us/research/">Microsoft Research</a></div>
+<div class="timeline-role">Researcher, Dynamics 365 AI</div>
+<div class="timeline-meta">Seattle, USA · Dec. 2020 – May 2021</div>
+<ul>
+<li>Created HiddenCut (ACL 2021) and Mixture of Virtual Prompts for efficient fine-tuning</li>
+</ul>
+</div>
+</div>
 
-* **Research Intern**, Carnegie Mellon University, Sep. 2018 -- Mar. 2019
-  - Advised by Prof. Robert Kraut
+<div class="timeline-item dot-sage">
+<div class="timeline-card">
+<div class="timeline-company">Georgia Institute of Technology / Stanford University</div>
+<div class="timeline-role">Research Assistant</div>
+<div class="timeline-meta">Aug. 2019 – May 2024</div>
+<ul>
+<li>Advisor: Prof. Diyi Yang. Published 20+ first-author papers at NeurIPS, ICLR, EMNLP, ACL, NAACL</li>
+</ul>
+</div>
+</div>
 
-* **Visiting Researcher**, UC Davis, Jun. 2018 -- Aug. 2018
-  - Working with Prof. Zhou Yu
+<div class="timeline-item dot-sand">
+<div class="timeline-card">
+<div class="timeline-company">Carnegie Mellon University</div>
+<div class="timeline-role">Research Intern</div>
+<div class="timeline-meta">Sep. 2018 – Mar. 2019</div>
+<ul>
+<li>Advised by Prof. Robert Kraut</li>
+</ul>
+</div>
+</div>
+
+<div class="timeline-item dot-terracotta">
+<div class="timeline-card">
+<div class="timeline-company">UC Davis</div>
+<div class="timeline-role">Visiting Researcher</div>
+<div class="timeline-meta">Jun. 2018 – Aug. 2018</div>
+<ul>
+<li>Working with Prof. Zhou Yu</li>
+</ul>
+</div>
+</div>
+
+</div>
 
 ## Education
 
-* **Ph.D. in Computer Science**, Georgia Institute of Technology / Stanford University, Aug. 2019 -- May 2024
-  - Advisor: Prof. Diyi Yang
-* **B.Eng. in Computer Science and Technology**, Zhejiang University, Sep. 2015 -- Jul. 2019
-  - Minor in Advanced Honor Class of Engineering Education, Chu Kochen Honors College (40/6,000)
+<div class="card-section">
+<p><strong>Ph.D. in Computer Science</strong>, Georgia Institute of Technology / Stanford University, Aug. 2019 – May 2024<br>
+Advisor: Prof. Diyi Yang</p>
+<p><strong>B.Eng. in Computer Science and Technology</strong>, Zhejiang University, Sep. 2015 – Jul. 2019<br>
+Minor in Advanced Honor Class of Engineering Education, Chu Kochen Honors College (40/6,000)</p>
+</div>
 
-## Teaching & Advising
+## Teaching &amp; Advising
 
-* Teaching Assistant, NLP (CS-4650/7650), Georgia Tech, with Prof. Mark Riedl, Spring 2023
-* Teaching Assistant, NLP (CS-4650/7650), Georgia Tech, with Prof. Diyi Yang, Spring 2020
-* Teaching Assistant, Computer Organization, Zhejiang University, Spring 2018
-* Advised Master's Students: Aaron Reich, Aastha Agrawal, Yufan Huang, Kunal Chawla, Nikhil Gupta (2020--2022)
-* Advised Undergraduate Students: Zhehao Zhang, Siru Ouyang, Mohan Dodda, Wenna Qin, Kexun Zhang, and others (2019--2024)
-* Co-advised students published at ACL, EMNLP, NeurIPS, and SIGIR
+<div class="card-section">
+<ul>
+<li>Teaching Assistant, NLP (CS-4650/7650), Georgia Tech, with Prof. Mark Riedl, Spring 2023</li>
+<li>Teaching Assistant, NLP (CS-4650/7650), Georgia Tech, with Prof. Diyi Yang, Spring 2020</li>
+<li>Teaching Assistant, Computer Organization, Zhejiang University, Spring 2018</li>
+<li>Advised Master's Students: Aaron Reich, Aastha Agrawal, Yufan Huang, Kunal Chawla, Nikhil Gupta (2020–2022)</li>
+<li>Advised Undergraduate Students: Zhehao Zhang, Siru Ouyang, Mohan Dodda, Wenna Qin, Kexun Zhang, and others (2019–2024)</li>
+<li>Co-advised students published at ACL, EMNLP, NeurIPS, and SIGIR</li>
+</ul>
+</div>
 
 ## Professional Service
 
-* **Area Chair:** ARR 2025 (April, October)
-* **Program Committee / Reviewer:** ACL (2021--2024), EMNLP (2020--2024), NAACL 2021, ICLR (2022--2023), NeurIPS 2025, ICML 2025, CHI 2023, UIST 2022, WWW 2021, AAAI (2020--2021), IJHCI 2023
-* **Conference Volunteer:** ACL 2020
-* **Organizer:** Georgia Tech NLP Seminar (2019--2021)
+<div class="card-section">
+<p><strong>Area Chair:</strong> ARR 2025 (April, October)</p>
+<p><strong>Program Committee / Reviewer:</strong>
+<span class="pill-tag terracotta">ACL 2021–2024</span>
+<span class="pill-tag sage">EMNLP 2020–2024</span>
+<span class="pill-tag sand">NAACL 2021</span>
+<span class="pill-tag purple">ICLR 2022–2023</span>
+<span class="pill-tag blue">NeurIPS 2025</span>
+<span class="pill-tag gray">ICML 2025</span>
+<span class="pill-tag gray">CHI 2023</span>
+<span class="pill-tag gray">UIST 2022</span>
+<span class="pill-tag gray">WWW 2021</span>
+<span class="pill-tag gray">AAAI 2020–2021</span>
+<span class="pill-tag gray">IJHCI 2023</span>
+</p>
+<p><strong>Conference Volunteer:</strong> ACL 2020</p>
+<p><strong>Organizer:</strong> Georgia Tech NLP Seminar (2019–2021)</p>
+</div>
 
-## Selected Awards & Honors
+## Selected Awards &amp; Honors
 
-* Outstanding Undergraduate Thesis, Zhejiang University, 2019
-* Honorable Mention, MCM/ICM Mathematical Contest in Modeling, 2017
-* Academic Physics Contest, Zhejiang University, fourth place, 2017
-* ACEE Honor Class, Chu Kochen Honors College, Zhejiang University (40/6,000), 2016
-* Scholarship for Academic Achievement, Zhejiang University, 2016
-* Scholarship for All-around Achievement, Zhejiang University, 2016
-* ACM School Trial, Zhejiang University, third prize, 2016
+<div class="card-section">
+<ul>
+<li>Outstanding Undergraduate Thesis, Zhejiang University, <span style="color:#999">2019</span></li>
+<li>Honorable Mention, MCM/ICM Mathematical Contest in Modeling, <span style="color:#999">2017</span></li>
+<li>Academic Physics Contest, Zhejiang University, fourth place, <span style="color:#999">2017</span></li>
+<li>ACEE Honor Class, Chu Kochen Honors College, Zhejiang University (40/6,000), <span style="color:#999">2016</span></li>
+<li>Scholarship for Academic Achievement, Zhejiang University, <span style="color:#999">2016</span></li>
+<li>Scholarship for All-around Achievement, Zhejiang University, <span style="color:#999">2016</span></li>
+<li>ACM School Trial, Zhejiang University, third prize, <span style="color:#999">2016</span></li>
+</ul>
+</div>

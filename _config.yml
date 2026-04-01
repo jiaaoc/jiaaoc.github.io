@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Jiaao Chen"
 title_separator          : "-"
 name                     : &name "Jiaao Chen"
-description              : &description "AI/ML Research Scientist"
+description              : &description "Jiaao Chen — AI researcher specializing in LLM agents, post-training, and reasoning. Founding Member at Eigen AI. Ph.D. Georgia Tech/Stanford."
 url                      : "https://www.jiaaochen.com" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "jiaaoc.github.io"
@@ -57,18 +57,22 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : &twitter
+  username               : &twitter "jiaao_chen"
 facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 :  # Open Graph/Twitter default site image
+og_image                 : "profile.jpg"
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  type                   : "Person"
+  name                   : "Jiaao Chen"
+  links:
+    - "https://scholar.google.com/citations?user=Pi9IVvUAAAAJ&hl=en"
+    - "https://github.com/jiaaoc"
+    - "https://www.linkedin.com/in/jiaao-chen-4997b0116"
+    - "https://twitter.com/jiaao_chen"
 
 
 # Analytics
@@ -85,6 +89,9 @@ author:
   bio              : "Founding Member of Technical Staff at Eigen AI. Ph.D. from Georgia Tech."
   location         : "Palo Alto, California, USA"
   employer         : "Eigen AI"
+  job_title        : "Founding Member of Technical Staff"
+  works_for        : "Eigen AI"
+  alumni_of        : "Georgia Institute of Technology"
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=Pi9IVvUAAAAJ&hl=en"
   email            : "chenjiaao1998@gmail.com"

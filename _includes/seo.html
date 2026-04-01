@@ -119,7 +119,17 @@
       "@type" : "{% if site.social.type %}{{ site.social.type }}{% else %}Person{% endif %}",
       "name" : "{{ site.social.name | default: site.name }}",
       "url" : {{ seo_url | jsonify }},
-      "sameAs" : {{ site.social.links | jsonify }}
+      "sameAs" : {{ site.social.links | jsonify }}{% if site.author.job_title %},
+      "jobTitle" : {{ site.author.job_title | jsonify }}{% endif %}{% if site.author.works_for %},
+      "worksFor" : {
+        "@type" : "Organization",
+        "name" : {{ site.author.works_for | jsonify }}
+      }{% endif %}{% if site.author.alumni_of %},
+      "alumniOf" : {
+        "@type" : "CollegeOrUniversity",
+        "name" : {{ site.author.alumni_of | jsonify }}
+      }{% endif %}{% if site.author.avatar %},
+      "image" : "{{ site.author.avatar | prepend: "/images/" | prepend: seo_url }}"{% endif %}
     }
   </script>
 {% endif %}
