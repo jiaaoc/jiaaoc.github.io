@@ -138,33 +138,19 @@ Minor in Advanced Honor Class of Engineering Education, Chu Kochen Honors Colleg
 ## Teaching &amp; Advising
 
 <div class="card-section">
-<ul>
-<li>Teaching Assistant, NLP (CS-4650/7650), Georgia Tech, with Prof. Mark Riedl, Spring 2023</li>
-<li>Teaching Assistant, NLP (CS-4650/7650), Georgia Tech, with Prof. Diyi Yang, Spring 2020</li>
-<li>Teaching Assistant, Computer Organization, Zhejiang University, Spring 2018</li>
-<li>Advised Master's Students: Aaron Reich, Aastha Agrawal, Yufan Huang, Kunal Chawla, Nikhil Gupta (2020–2022)</li>
-<li>Advised Undergraduate Students: Zhehao Zhang, Siru Ouyang, Mohan Dodda, Wenna Qin, Kexun Zhang, and others (2019–2024)</li>
-<li>Co-advised students published at ACL, EMNLP, NeurIPS, and SIGIR</li>
-</ul>
+<p>Teaching Assistant, NLP (CS-4650/7650), Georgia Tech, with Prof. Mark Riedl, Spring 2023</p>
+<p>Teaching Assistant, NLP (CS-4650/7650), Georgia Tech, with Prof. Diyi Yang, Spring 2020</p>
+<p>Teaching Assistant, Computer Organization, Zhejiang University, Spring 2018</p>
+<p>Advised Master's Students: Aaron Reich, Aastha Agrawal, Yufan Huang, Kunal Chawla, Nikhil Gupta (2020–2022)</p>
+<p>Advised Undergraduate Students: Zhehao Zhang, Siru Ouyang, Mohan Dodda, Wenna Qin, Kexun Zhang, and others (2019–2024)</p>
+<p>Co-advised students published at ACL, EMNLP, NeurIPS, and SIGIR</p>
 </div>
 
 ## Professional Service
 
 <div class="card-section">
 <p><strong>Area Chair:</strong> ARR 2025 (April, October)</p>
-<p><strong>Program Committee / Reviewer:</strong>
-<span class="pill-tag terracotta">ACL 2021–2024</span>
-<span class="pill-tag sage">EMNLP 2020–2024</span>
-<span class="pill-tag sand">NAACL 2021</span>
-<span class="pill-tag purple">ICLR 2022–2023</span>
-<span class="pill-tag blue">NeurIPS 2025</span>
-<span class="pill-tag gray">ICML 2025</span>
-<span class="pill-tag gray">CHI 2023</span>
-<span class="pill-tag gray">UIST 2022</span>
-<span class="pill-tag gray">WWW 2021</span>
-<span class="pill-tag gray">AAAI 2020–2021</span>
-<span class="pill-tag gray">IJHCI 2023</span>
-</p>
+<p><strong>Program Committee / Reviewer:</strong> ACL (2021–2024), EMNLP (2020–2024), NAACL 2021, ICLR (2022–2023), NeurIPS 2025, ICML 2025, CHI 2023, UIST 2022, WWW 2021, AAAI (2020–2021), IJHCI 2023</p>
 <p><strong>Conference Volunteer:</strong> ACL 2020</p>
 <p><strong>Organizer:</strong> Georgia Tech NLP Seminar (2019–2021)</p>
 </div>
@@ -172,13 +158,11 @@ Minor in Advanced Honor Class of Engineering Education, Chu Kochen Honors Colleg
 ## Selected Awards &amp; Honors
 
 <div class="card-section">
-<ul>
-<li>Outstanding Undergraduate Thesis, Zhejiang University, <span style="color:#999">2019</span></li>
-<li>Honorable Mention, MCM/ICM Mathematical Contest in Modeling, <span style="color:#999">2017</span></li>
-<li>Academic Physics Contest, Zhejiang University, fourth place, <span style="color:#999">2017</span></li>
-<li>ACEE Honor Class, Chu Kochen Honors College, Zhejiang University (40/6,000), <span style="color:#999">2016</span></li>
-<li>Scholarship for Academic Achievement, Zhejiang University, <span style="color:#999">2016</span></li>
-<li>Scholarship for All-around Achievement, Zhejiang University, <span style="color:#999">2016</span></li>
-<li>ACM School Trial, Zhejiang University, third prize, <span style="color:#999">2016</span></li>
-</ul>
+<p>Outstanding Undergraduate Thesis, Zhejiang University, <span style="color:#999">2019</span></p>
+<p>Honorable Mention, MCM/ICM Mathematical Contest in Modeling, <span style="color:#999">2017</span></p>
+<p>Academic Physics Contest, Zhejiang University, fourth place, <span style="color:#999">2017</span></p>
+<p>ACEE Honor Class, Chu Kochen Honors College, Zhejiang University (40/6,000), <span style="color:#999">2016</span></p>
+<p>Scholarship for Academic Achievement, Zhejiang University, <span style="color:#999">2016</span></p>
+<p>Scholarship for All-around Achievement, Zhejiang University, <span style="color:#999">2016</span></p>
+<p>ACM School Trial, Zhejiang University, third prize, <span style="color:#999">2016</span></p>
 </div>
