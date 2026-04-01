@@ -14,7 +14,7 @@ author_profile: true
 
 <div class="timeline-item dot-terracotta">
 <div class="timeline-card">
-<div class="timeline-company"><a href="https://www.eigen.ai/">Eigen AI</a></div>
+<div class="timeline-company"><a href="https://www.eigenai.com">Eigen AI</a></div>
 <div class="timeline-role">Founding Member of Technical Staff</div>
 <div class="timeline-meta">Palo Alto, USA · Jan. 2026 – Present</div>
 <ul>
