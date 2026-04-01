@@ -11,12 +11,14 @@ redirect_from:
   - /portfolio.html
 ---
 
+<div class="hero-intro">
+  <h1 class="hero-headline">Building AI agents that reason, act, and improve themselves.</h1>
+</div>
+
 <div class="card-section">
-  <p>Hello, I'm Jiaao Chen!</p>
   <p>I am a Founding Member of Technical Staff at <a href="https://www.eigenai.com">Eigen AI</a>, where I build systems that make LLM agents better. I lead <a href="https://arxiv.org/abs/2603.05553">EigenData</a>, a self-evolving multi-agent platform for synthesizing, auditing, and repairing function-calling data, and EigenLoop, an end-to-end post-training pipeline (SFT, GRPO/RL) for production tool-use agents.</p>
-  <p>Previously, I was a Research Scientist at <a href="https://about.meta.com/">Meta</a> (GenAI team), where I worked on agentic post-training in TBD agent workstream, and an Applied Scientist at <a href="https://www.amazon.com/">Amazon</a>, working on LLM reasoning for e-commerce.</p>
-  <p>I received my Ph.D. in Computer Science from <a href="https://www.gatech.edu/">Georgia Institute of Technology</a> / <a href="https://www.stanford.edu/">Stanford University</a> in 2024, advised by Prof. <a href="https://cs.stanford.edu/~diyiyang/">Diyi Yang</a>. I have 20+ first-author publications at top venues including NeurIPS, ICLR, EMNLP, and ACL.</p>
-  <p>Before Georgia Tech, I obtained my bachelor's degree from <a href="http://www.zju.edu.cn/english/">Zhejiang University</a>, where I was in the ACEE Honor Class at Chu Kochen Honors College (top 40 out of 6,000 students).</p>
+  <p>Previously, I was a Research Scientist at <a href="https://about.meta.com/">Meta</a> (GenAI), where I led agentic post-training that improved Llama 4 Maverick's function-calling BFCL score from ~50 to 72, and an Applied Scientist at <a href="https://www.amazon.com/">Amazon</a>, working on LLM reasoning for e-commerce.</p>
+  <p>I received my Ph.D. in Computer Science from <a href="https://www.gatech.edu/">Georgia Tech</a> / <a href="https://www.stanford.edu/">Stanford</a> in 2024, advised by Prof. <a href="https://cs.stanford.edu/~diyiyang/">Diyi Yang</a>. My research spans LLM agents, post-training, and reasoning, with 20+ first-author publications at NeurIPS, ICLR, EMNLP, and ACL.</p>
 </div>
 
 <!-- UPDATE STATS: last updated 2026-03-31 -->
@@ -48,10 +50,11 @@ redirect_from:
 
 <div class="card-section">
   <h2>News</h2>
-  <div class="news-item"><span class="news-date terracotta">Jan. 2026</span> <span class="news-text">Joined <a href="https://www.eigenai.com">Eigen AI</a> as Founding Member of Technical Staff.</span></div>
-  <div class="news-item"><span class="news-date sage">2026</span> <span class="news-text">EigenData paper on self-evolving multi-agent platform for function-calling data released (<a href="https://arxiv.org/abs/2603.05553">arXiv</a>).</span></div>
-  <div class="news-item"><span class="news-date sand">2024</span> <span class="news-text">DARG accepted at NeurIPS 2024; DyVal accepted at ICLR 2024.</span></div>
-  <div class="news-item"><span class="news-date purple">May 2024</span> <span class="news-text">Completed Ph.D. from Georgia Tech / Stanford.</span></div>
+  <div class="news-item"><span class="news-date terracotta">Mar. 2026</span> <span class="news-text">Released <a href="https://arxiv.org/abs/2603.05553">EigenData</a> — a self-evolving multi-agent platform for function-calling data synthesis, auditing, and repair.</span></div>
+  <div class="news-item"><span class="news-date sage">Jan. 2026</span> <span class="news-text">Joined <a href="https://www.eigenai.com">Eigen AI</a> as Founding Member of Technical Staff, building next-gen agentic AI infrastructure.</span></div>
+  <div class="news-item"><span class="news-date sand">2025</span> <span class="news-text">Led agentic post-training at Meta that improved Llama 4 Maverick's BFCL function-calling score from ~50 to 72.</span></div>
+  <div class="news-item"><span class="news-date purple">2024</span> <span class="news-text">DARG accepted at NeurIPS 2024; DyVal accepted at ICLR 2024; Skills-in-Context at EMNLP 2024.</span></div>
+  <div class="news-item"><span class="news-date blue">May 2024</span> <span class="news-text">Defended Ph.D. thesis at Georgia Tech / Stanford. Onward!</span></div>
 </div>
 
 <div class="card-section">
