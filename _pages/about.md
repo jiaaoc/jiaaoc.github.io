@@ -13,7 +13,7 @@ redirect_from:
 
 <div class="card-section">
   <p>Hello, I'm Jiaao Chen!</p>
-  <p>I am a Founding Member of Technical Staff at <a href="https://www.eigenai.com">Eigen AI</a>, where I lead the development of self-evolving multi-agent platforms for agentic AI systems. My work focuses on LLM post-training (SFT, GRPO/RL), tool-use agents, and multi-agent data pipelines.</p>
+  <p>I am a Founding Member of Technical Staff at <a href="https://www.eigenai.com">Eigen AI</a>, where I build systems that make LLM agents better. I lead <a href="https://arxiv.org/abs/2603.05553">EigenData</a>, a self-evolving multi-agent platform for synthesizing, auditing, and repairing function-calling data, and EigenLoop, an end-to-end post-training pipeline (SFT, GRPO/RL) for production tool-use agents.</p>
   <p>Previously, I was a Research Scientist at <a href="https://about.meta.com/">Meta</a> (GenAI team), where I worked on agentic post-training in TBD agent workstream, and an Applied Scientist at <a href="https://www.amazon.com/">Amazon</a>, working on LLM reasoning for e-commerce.</p>
   <p>I received my Ph.D. in Computer Science from <a href="https://www.gatech.edu/">Georgia Institute of Technology</a> / <a href="https://www.stanford.edu/">Stanford University</a> in 2024, advised by Prof. <a href="https://cs.stanford.edu/~diyiyang/">Diyi Yang</a>. I have 20+ first-author publications at top venues including NeurIPS, ICLR, EMNLP, and ACL.</p>
   <p>Before Georgia Tech, I obtained my bachelor's degree from <a href="http://www.zju.edu.cn/english/">Zhejiang University</a>, where I was in the ACEE Honor Class at Chu Kochen Honors College (top 40 out of 6,000 students).</p>
