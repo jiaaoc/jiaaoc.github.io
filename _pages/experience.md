@@ -13,8 +13,8 @@ author_profile: true
   - Building EigenLoop, a full post-training pipeline (SFT, GRPO/RL, evaluation) for production agentic AI systems
 
 * **Research Scientist**, [Meta](https://about.meta.com/) (GenAI), Menlo Park, USA, Mar. 2025 -- Jan. 2026
+  - Built agentic synthetic data generation pipeline with verified tasks and LLM-as-judge for agentic RL in TBD agent workstream
   - Led agentic post-training that improved Llama 4 Maverick's BFCL function-calling performance from ~50 to 72
-  - Built agentic synthetic data generation pipeline with verified tasks and LLM-as-judge for agentic RL
 
 * **Applied Scientist**, [Amazon](https://www.amazon.com/), Palo Alto, USA, May 2024 -- Mar. 2025
   - Improved LLM reasoning for modeling customer shopping behaviors and personalized recommendation
