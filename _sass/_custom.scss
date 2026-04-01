@@ -80,6 +80,7 @@ a {
 .sidebar {
   .author__avatar {
     img {
+      max-width: 150px;
       border-radius: 50%;
       border: 3px solid $terracotta;
       padding: 0;
@@ -501,14 +502,10 @@ a {
 }
 
 /* --- Sidebar Card Container --- */
-.sidebar {
-  .author__avatar + .author__content,
-  > div[itemscope] {
-    background: $warm-bg;
-    border: 1.5px solid $card-border;
-    border-radius: 12px;
-    padding: 16px;
-  }
+.author__content,
+.author__urls-wrapper {
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
 /* --- Responsive --- */
