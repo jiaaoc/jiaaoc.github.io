@@ -26,7 +26,7 @@ author_profile: true
 
 <div class="timeline-item dot-sage">
 <div class="timeline-card">
-<div class="timeline-company"><a href="https://about.meta.com/">Meta</a> (GenAI)</div>
+<div class="timeline-company"><a href="https://about.meta.com/">Meta</a> (MSL)</div>
 <div class="timeline-role">Research Scientist</div>
 <div class="timeline-meta">Menlo Park, USA · Mar. 2025 – Jan. 2026</div>
 <ul>
