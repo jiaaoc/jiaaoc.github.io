@@ -83,11 +83,17 @@ a {
 
 .sidebar {
   .author__avatar {
+    display: block;
+    width: 100%;
+    text-align: center;
+
     img {
       max-width: 140px;
       border-radius: 12px;
       border: 3px solid $terracotta;
       padding: 0;
+      margin: 0 auto;
+      display: block;
     }
   }
 
