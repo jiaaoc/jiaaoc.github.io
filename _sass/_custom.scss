@@ -508,16 +508,74 @@ a {
   padding-right: 4px;
 }
 
-/* --- Responsive --- */
-@include breakpoint(max-width $small) {
+/* --- Responsive: Tablet & below (sidebar stacks above content) --- */
+@media (max-width: 924px) {
+  /* Center the sidebar when it stacks on top */
+  .sidebar {
+    text-align: center;
+
+    .author__avatar {
+      img {
+        max-width: 120px;
+        margin: 0 auto;
+      }
+    }
+
+    .author__content {
+      .author__name {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  .cv-download-btn {
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Tighten page padding */
+  #main {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  /* News items stack on narrow screens */
+  .news-item {
+    flex-direction: column;
+    gap: 2px;
+    margin-bottom: 10px;
+  }
+
+  /* Card header (e.g. "Selected Publications" + "View all") */
+  .card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+}
+
+/* --- Responsive: Phone --- */
+@media (max-width: 600px) {
   .stats-bar {
     flex-direction: column;
+    gap: 8px;
+  }
+
+  .stat-tile {
+    padding: 10px 8px;
+
+    .stat-number {
+      font-size: 1.3rem;
+    }
   }
 
   .card-section {
-    padding: 12px;
+    padding: 14px;
+    margin-bottom: 12px;
   }
 
+  /* Experience timeline: remove line & dots */
   .experience-timeline {
     padding-left: 0;
 
@@ -530,5 +588,61 @@ a {
     &::before {
       display: none;
     }
+
+    .timeline-card {
+      padding: 12px;
+    }
+  }
+
+  /* Experience chips wrap tighter */
+  .experience-chips {
+    gap: 6px;
+
+    .exp-chip {
+      padding: 4px 10px;
+      font-size: 0.8em;
+    }
+  }
+
+  /* Pill tags smaller on mobile */
+  .pill-tag {
+    padding: 3px 10px;
+    font-size: 0.78em;
+  }
+
+  /* Publication entries */
+  .pub-entry {
+    .pub-title {
+      font-size: 0.9em;
+    }
+    .pub-authors {
+      font-size: 0.8em;
+    }
+  }
+
+  /* Scholar link buttons stack */
+  .scholar-links {
+    flex-direction: column;
+    gap: 6px;
+
+    a {
+      text-align: center;
+    }
+  }
+
+  /* Contact card full width */
+  .contact-card {
+    max-width: 100%;
+  }
+
+  /* Nav logo slightly smaller */
+  .site-logo svg {
+    width: 26px;
+    height: 26px;
+  }
+
+  /* Page title smaller */
+  .page__title {
+    font-size: 1.3em;
   }
 }
