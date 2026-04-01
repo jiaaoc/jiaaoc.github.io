@@ -4,7 +4,7 @@
   {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.author %}
 {% endif %}
 
-<div itemscope itemtype="http://schema.org/Person">
+<div itemscope itemtype="http://schema.org/Person" class="author-card">
 
   <div class="author__avatar">
     {% if author.avatar contains "://" %}
@@ -17,39 +17,39 @@
   <div class="author__content">
     <h3 class="author__name">{{ author.name }}</h3>
     {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
+    {% if author.location or author.employer %}
+    <p class="author__meta">
+      {% if author.location %}<span><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> {{ author.location }}</span>{% endif %}
+      {% if author.employer %}<br><span><i class="fa fa-fw fa-building" aria-hidden="true"></i> {{ author.employer }}</span>{% endif %}
+    </p>
+    {% endif %}
   </div>
 
   <div class="author__urls-wrapper">
     <button class="btn btn--inverse">Follow</button>
-    <ul class="author__urls social-icons">
-      {% if author.location %}
-        <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> {{ author.location }}</li>
-      {% endif %}
-      {% if author.employer %}
-        <li><i class="fa fa-fw fa-building" aria-hidden="true"></i> {{ author.employer }}</li>
-      {% endif %}
+    <div class="author-social-icons">
       {% if author.email %}
-        <li><a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> Email</a></li>
+        <a href="mailto:{{ author.email }}" title="Email"><i class="fas fa-fw fa-envelope"></i></a>
       {% endif %}
       {% if author.googlescholar %}
-        <li><a href="{{ author.googlescholar }}"><i class="fas fa-fw fa-graduation-cap"></i> Google Scholar</a></li>
+        <a href="{{ author.googlescholar }}" title="Google Scholar"><i class="fas fa-fw fa-graduation-cap"></i></a>
       {% endif %}
       {% if author.github %}
-        <li><a href="https://github.com/{{ author.github }}"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        <a href="https://github.com/{{ author.github }}" title="GitHub"><i class="fab fa-fw fa-github"></i></a>
       {% endif %}
       {% if author.linkedin %}
-        <li><a href="https://www.linkedin.com/in/{{ author.linkedin }}"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+        <a href="https://www.linkedin.com/in/{{ author.linkedin }}" title="LinkedIn"><i class="fab fa-fw fa-linkedin"></i></a>
       {% endif %}
       {% if author.twitter %}
-        <li><a href="https://twitter.com/{{ author.twitter }}"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        <a href="https://twitter.com/{{ author.twitter }}" title="Twitter"><i class="fab fa-fw fa-twitter"></i></a>
       {% endif %}
       {% if author.researchgate %}
-        <li><a href="{{ author.researchgate }}"><i class="fab fa-fw fa-researchgate" aria-hidden="true"></i> ResearchGate</a></li>
+        <a href="{{ author.researchgate }}" title="ResearchGate"><i class="fab fa-fw fa-researchgate"></i></a>
       {% endif %}
       {% if author.orcid %}
-        <li><a href="{{ author.orcid }}"><i class="ai ai-orcid-square ai-fw"></i> ORCID</a></li>
+        <a href="{{ author.orcid }}" title="ORCID"><i class="ai ai-orcid-square ai-fw"></i></a>
       {% endif %}
-    </ul>
+    </div>
     <a href="{{ base_path }}/Jiaao_Chen_CV.pdf" class="cv-download-btn"><i class="fa fa-fw fa-download"></i> Download CV</a>
   </div>
 </div>

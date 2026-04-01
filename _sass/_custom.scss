@@ -77,10 +77,14 @@ a {
 }
 
 /* --- Sidebar / Author Profile --- */
+.author-card {
+  text-align: center;
+}
+
 .sidebar {
   .author__avatar {
     img {
-      max-width: 150px;
+      max-width: 140px;
       border-radius: 12px;
       border: 3px solid $terracotta;
       padding: 0;
@@ -91,29 +95,50 @@ a {
     .author__name {
       color: $navy;
       font-weight: 700;
+      margin-bottom: 4px;
     }
     .author__bio {
       color: $terracotta;
-      font-size: 0.85em;
+      font-size: 0.82em;
+      margin-bottom: 6px;
+      line-height: 1.4;
+    }
+    .author__meta {
+      color: #999;
+      font-size: 0.78em;
+      margin: 0;
+      line-height: 1.5;
+
+      i {
+        color: $card-border;
+      }
     }
   }
+}
 
-  .author__urls-wrapper {
-    .author__urls {
-      li {
-        a {
-          color: $body-text;
-          text-decoration: none;
-          padding: 4px 8px;
-          border-radius: 6px;
-          transition: background 0.2s, color 0.2s;
+/* Social icons as horizontal row */
+.author-social-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px;
+  margin: 10px 0;
 
-          &:hover {
-            background: $terracotta-tint;
-            color: $terracotta;
-          }
-        }
-      }
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    color: $body-text;
+    font-size: 1.1em;
+    text-decoration: none !important;
+    transition: background 0.2s, color 0.2s;
+
+    &:hover {
+      background: $terracotta-tint;
+      color: $terracotta;
     }
   }
 }
@@ -122,13 +147,13 @@ a {
   display: block;
   width: 100%;
   padding: 8px 16px;
-  margin-top: 12px;
+  margin-top: 6px;
   background: $terracotta;
   color: #fff !important;
   text-align: center;
   border-radius: 8px;
   font-weight: 600;
-  font-size: 0.85em;
+  font-size: 0.82em;
   text-decoration: none !important;
   transition: background 0.2s;
 
@@ -510,28 +535,40 @@ a {
 
 /* --- Responsive: Tablet & below (sidebar stacks above content) --- */
 @media (max-width: 924px) {
-  /* Center the sidebar when it stacks on top */
+  /* Compact sidebar when stacked on top */
   .sidebar {
-    text-align: center;
-
     .author__avatar {
       img {
-        max-width: 120px;
+        max-width: 100px;
         margin: 0 auto;
       }
     }
 
     .author__content {
       .author__name {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+      }
+      .author__bio {
+        font-size: 0.78em;
       }
     }
   }
 
+  .author-social-icons {
+    gap: 2px;
+
+    a {
+      width: 34px;
+      height: 34px;
+    }
+  }
+
   .cv-download-btn {
-    max-width: 200px;
+    max-width: 180px;
     margin-left: auto;
     margin-right: auto;
+    padding: 6px 14px;
+    font-size: 0.8em;
   }
 
   /* Tighten page padding */
